@@ -1,4 +1,4 @@
-package msprNivantis;
+package msprNivantis.modele;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
