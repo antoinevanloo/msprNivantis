@@ -9,11 +9,11 @@
 <body>
 	<form method="post" accept-charset="utf-8">
 		<div>
-			<label for="libelle">Libelle : </label>
-			<select id="libelle" name="libelle">
+			<label for="produits">Produits : </label>
+			<select id="produits" name="produits">
 				<option value=""></option>
-				<c:forEach var="libelle" items="${libelles}">
-					<option value="${libelle}"><c:out value="${libelle}" /></option>
+				<c:forEach var="p" items="${produits}">
+					<option value="${p.id}"/><c:out value="${p.libelle}"/></option>
 				</c:forEach>
 			</select>
 		</div>
@@ -22,7 +22,6 @@
 			<span class="error"><c:out value="${errors['remise']}"/></span>
 		</div>
 		
-		</div>
 		<div>
 			<button type="submit">S'inscrire</button>
 		</div>
